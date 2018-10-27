@@ -1,0 +1,33 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+
+final class {{ module_info.name }}Assembly {
+	private static func assembleModule(with viewController: {{ module_info.name }}ViewController) {
+        let router = {{ module_info.name }}Router()
+        router.transitionHandler = viewController
+
+        let interactor = {{ module_info.name }}Interactor()
+
+        let presenter = {{ module_info.name }}Presenter(view: viewController, interactor: interactor, router: router)
+        viewController.output = presenter
+
+        interactor.output = presenter
+    }
+
+    static func createViewControllerAndAssemblyModule() -> ViewController {
+        guard let viewController = UIViewController.createViewController(withType: {{ module_info.name }}ViewController.self) as? {{ module_info.name }}ViewController else {
+            fatalError("can't create {{ module_info.name }}ViewController")
+        }
+
+        {{ module_info.name }}Assembly.assembleModule(with: viewController)
+
+        return viewController
+    }
+}
