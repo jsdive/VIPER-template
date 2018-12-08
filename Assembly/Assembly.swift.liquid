@@ -6,7 +6,7 @@
 //  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 final class {{ module_info.name }}Assembly {
 	private static func assembleModule(with viewController: {{ module_info.name }}ViewController) {
@@ -21,7 +21,7 @@ final class {{ module_info.name }}Assembly {
         interactor.output = presenter
     }
 
-    static func createViewControllerAndAssemblyModule() -> ViewController {
+    static func createViewControllerAndAssemblyModule() -> UIViewController {
         guard let viewController = UIViewController.createViewController(withType: {{ module_info.name }}ViewController.self) as? {{ module_info.name }}ViewController else {
             fatalError("can't create {{ module_info.name }}ViewController")
         }
