@@ -10,22 +10,22 @@ license: "MIT"
 code_files:
 
 # Assembly layer
-- {name: Assembly/Assembly.swift,  path: Assembly.swift.liquid}
+- {name: Assembly/Assembly.swift, path: Assembly/Assembly.swift.liquid}
 
 # Router layer
-- {name: Router/RouterInput.swift,  path: RouterInput.swift.liquid}
-- {name: Router/Router.swift,  path: Router.swift.liquid}
+- {name: Router/RouterInput.swift, path: Router/RouterInput.swift.liquid}
+- {name: Router/Router.swift, path: Router/Router.swift.liquid}
 
 # Interactor layer
-- {name: Interactor/Interactor.swift,  path: Interactor.swift.liquid}
-- {name: Interactor/InteractorInput.swift,  path: InteractorInput.swift.liquid}
-- {name: Interactor/InteractorOutput.swift,  path: InteractorOutput.swift.liquid}
+- {name: Interactor/Interactor.swift, path: Interactor/Interactor.swift.liquid}
+- {name: Interactor/InteractorInput.swift, path: Interactor/InteractorInput.swift.liquid}
+- {name: Interactor/InteractorOutput.swift, path: Interactor/InteractorOutput.swift.liquid}
 
 # Presenter layer
-- {name: Presenter/Presenter.swift,  path: Presenter.swift.liquid}
+- {name: Presenter/Presenter.swift, path: Presenter/Presenter.swift.liquid}
 
 # View layer
-- {name: View/ViewController.swift,  path: ViewController.swift.liquid}
-- {name: View/ViewController.xib,  path: ViewController.xib.liquid}
-- {name: View/ViewInput.swift,  path: ViewInput.swift.liquid}
-- {name: View/ViewOutput.swift,  path: ViewOutput.swift.liquid}
+- {name: View/ViewController.swift, path: View/ViewController.swift.liquid}
+- {name: View/ViewController.xib, path: View/ViewController.xib.liquid}
+- {name: View/ViewInput.swift, path: View/ViewInput.swift.liquid}
+- {name: View/ViewOutput.swift, path: View/ViewOutput.swift.liquid}
